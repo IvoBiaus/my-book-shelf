@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import Logo from "@/public/logo.png";
 import Link from "next/link";
+import Logo from "@/public/logo.png";
 import { PATHS } from "./constants";
 
 export default function NotFound() {
