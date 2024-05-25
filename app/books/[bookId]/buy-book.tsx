@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ProviderA from "@/public/provider-a.png";
-import ProviderB from "@/public/provider-b.png";
+import ProviderA from "@/public/assets/provider-a.png";
+import ProviderB from "@/public/assets/provider-b.png";
 
 const BuyBook = () => {
   return (
