@@ -22,7 +22,7 @@ const SearchInput = () => {
 
     // Avoid search if query is too short
     if (value.length >= 3) {
-      router.push(PATHS.books(value));
+      router.push(PATHS.books(encodeURI(value)));
     }
   };
 

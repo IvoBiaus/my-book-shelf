@@ -1,7 +1,6 @@
 export const PATHS = {
-  books: (query: string, page = 1) =>
-    `/books?query=${encodeURI(query)}&page=${page}`,
-  bookDetail: (id: string) => `/books/${id}`,
+  books: (query: string, page = 1) => `/books/${query}/${page}`,
+  bookDetail: (id: string) => `/book/${id}`,
   home: () => "/",
 };
 

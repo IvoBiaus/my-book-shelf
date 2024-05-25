@@ -11,7 +11,10 @@ export const getBooksByQuery = async (
   const results = await fetch(
     `${BASE_URL}/search.json?q=${encodeURI(
       query
-    )}&page=${page}&limit=${DOCS_PER_PAGE}`
+    )}&page=${page}&limit=${DOCS_PER_PAGE}`,
+    {
+      cache: "no-store",
+    }
   );
   const json = await results.json();
 
