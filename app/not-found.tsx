@@ -14,7 +14,7 @@ export default function NotFound() {
         href={PATHS.home()}
         className="text-4xl md:text-6xl flex flex-col md:flex-row md:gap-8 items-center"
       >
-        Let's head back to <Image alt="My Book Shelf Logo" src={Logo} />
+        Let&apos;s head back to <Image alt="My Book Shelf Logo" src={Logo} />
       </Link>
     </main>
   );

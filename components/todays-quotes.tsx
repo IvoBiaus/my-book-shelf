@@ -39,7 +39,7 @@ const TodaysQuotes = () => {
   return (
     <div className="relative h-60 w-[550px] shrink-0 rounded-lg bg-gradient-to-r from-secondary-orange to-secondary-purple from-[-25%] to-[125%] text-white p-5 md:p-8 max-w-full">
       <h2 className="font-medium text-lg md:text-2xl opacity-90">
-        Today's Quote
+        Today&apos;s Quote
       </h2>
       {quotes.map(({ author, quote }, idx) => {
         const isSelected = idx === currQuote;
