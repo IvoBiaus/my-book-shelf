@@ -1,0 +1,32 @@
+type TBookResult = {
+  author_key: string[];
+  author_name?: string[];
+  cover_edition_key: string;
+  cover_i: number;
+  ebook_access: "no_ebook" | "ebook";
+  ebook_count_i: number;
+  edition_count: number;
+  edition_key: string[];
+  first_publish_year: number;
+  first_sentence?: string[];
+  has_fulltext: boolean;
+  isbn?: string[];
+  key: string;
+  language?: string[];
+  last_modified_i: number;
+  number_of_pages_median?: number;
+  public_scan_b?: boolean;
+  publish_date: string[];
+  publish_place: string[];
+  publish_year: string[];
+  publisher: string[];
+  seed: string[];
+  title: string;
+  title_suggest: string;
+  title_sort: string;
+  type: string;
+  publisher_facet: string[];
+  author_facet: string[];
+};
+
+export default TBookResult;
