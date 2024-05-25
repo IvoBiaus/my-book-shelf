@@ -18,7 +18,7 @@ const Books = async ({ params: { query, page } }: TParams) => {
   const noResults = !result.numFound;
 
   return (
-    <div className="flex flex-col px-11 py-6 overflow-y-auto overflow-x-hidden h-full">
+    <div className="flex flex-col px-5 md:px-11 py-6 overflow-y-auto overflow-x-hidden h-full">
       <div className="flex gap-6 flex-wrap">
         {result.docs.map((i) => (
           <BookItem book={i} key={i.key} />
