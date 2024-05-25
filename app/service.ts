@@ -21,7 +21,9 @@ export const getBooksByQuery = async (
   return json;
 };
 export const getBook = async (bookId: string): Promise<TBookDetail> => {
-  const results = await fetch(`${BASE_URL}/works/${bookId}.json`);
+  const results = await fetch(`${BASE_URL}/works/${bookId}.json`, {
+    cache: "no-store",
+  });
   const json = await results.json();
   return json;
 };
@@ -31,26 +33,35 @@ export const getAuthorOtherWorks = async (
   limit: number = 3
 ): Promise<TOtherWork[]> => {
   const results = await fetch(
-    `${BASE_URL}/${autherKey}/works.json?limit=${limit}`
+    `${BASE_URL}/${autherKey}/works.json?limit=${limit}`,
+    {
+      cache: "no-store",
+    }
   );
   const json = await results.json();
   return json.entries;
 };
 
 export const getAuthor = async (autherKey: string): Promise<TAuthor> => {
-  const results = await fetch(`${BASE_URL}/${autherKey}.json`);
+  const results = await fetch(`${BASE_URL}/${autherKey}.json`, {
+    cache: "no-store",
+  });
   const json = await results.json();
   return json;
 };
 
 export const getDailyBooksByPage = async (page = 1): Promise<TBook[]> => {
-  const results = await fetch(`${BASE_URL}/trending/daily.json?page=${page}`);
+  const results = await fetch(`${BASE_URL}/trending/daily.json?page=${page}`, {
+    cache: "no-store",
+  });
   const json = await results.json();
   return json.works;
 };
 
 export const getTopTrending = async (limit = 10): Promise<TBook[]> => {
-  const results = await fetch(`${BASE_URL}/trending.json?limit=${limit}`);
+  const results = await fetch(`${BASE_URL}/trending.json?limit=${limit}`, {
+    cache: "no-store",
+  });
   const json = await results.json();
   return json.works;
 };
