@@ -32,8 +32,8 @@ const BookDetail = async ({ params: { bookId } }: TParams) => {
         <BookInfo author={author} book={book} />
         <AboutTheAuthor author={author} book={book} />
       </div>
-      <div className="flex gap-16">
-        <div className="rounded-lg bg-white p-8 flex flex-col w-72 shrink-0 gap-7">
+      <div className="flex gap-8 md:gap-16 md:flex-row flex-col-reverse">
+        <div className="rounded-lg bg-white p-8 flex flex-col w-72 shrink-0 gap-7 h-fit">
           <h4 className="font-semibold text-xl">
             <span className="text-primary">Buy</span> this book Online
           </h4>
